@@ -1,21 +1,3 @@
-# Immutable Class Example in Java
-
-## Overview
-This document explains the concept of creating an immutable class in Java. An immutable class is a class whose instances cannot be modified after they are created. This concept is useful in many scenarios, such as ensuring thread safety and preserving the integrity of objects.
-
-## Characteristics of an Immutable Class
-To create an immutable class in Java, follow these guidelines:
-1. Declare the class as `final` so it cannot be subclassed.
-2. Declare all fields as `private` and `final` to ensure they are initialized once and cannot be changed.
-3. Initialize all fields via a constructor.
-4. Do not provide any setters for the fields.
-5. Ensure that all mutable fields (if any) are properly handled to prevent changes.
-
-## Example Implementation
-Below is an example implementation of an immutable class in Java, along with a mutable `Address` class to demonstrate handling mutable fields.
-
-### ImmutableClass.java
-```java
 public final class ImmutableClass {
     private final String name;
     private final int age;
